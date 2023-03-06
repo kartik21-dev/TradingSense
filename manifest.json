@@ -1,11 +1,11 @@
 {
-    "name": "hiralalempresa_website_v1",
-    "short_name": "hiralalempresa_website_v1",
+    "name": "raghavgroup_website_v1",
+    "short_name": "raghavgroup_website_v1",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "hiralalempresa website",
+    "description": "Transforming success",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
