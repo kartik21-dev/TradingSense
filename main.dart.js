@@ -17085,10 +17085,12 @@ JL:function JL(){},
 JN:function JN(){},
 JO:function JO(){},
 L4:function L4(){},
-abK(a,b){return new A.E6(b,a,null)},
-E6:function E6(a,b,c){this.c=a
-this.x=b
-this.a=c},
+abK(a,b,c){return new A.E6(c,b,a,null)},
+E6:function E6(a,b,c,d){var _=this
+_.c=a
+_.f=b
+_.x=c
+_.a=d},
 Yf:function Yf(a,b,c){this.a=a
 this.b=b
 this.c=c},
@@ -56369,12 +56371,12 @@ A.JN.prototype={}
 A.JO.prototype={}
 A.L4.prototype={}
 A.E6.prototype={
-M(a){var s,r,q,p=null,o={},n=this.c,m=A.aoq(a,n,!1)
-o.a=this.x
-s=A.ajH(a,n)
-r=s?A.Vl(a):p
-q=A.abF(m,r,B.aL,p,p,p,new A.Yf(o,this,m))
-return s&&r!=null?new A.nx(p,p,B.DE,q,p):q}}
+M(a){var s,r,q,p=this,o=null,n={},m=p.c,l=A.aoq(a,m,!1)
+n.a=p.x
+s=p.f==null&&A.ajH(a,m)
+r=s?A.Vl(a):p.f
+q=A.abF(l,r,B.aL,o,o,o,new A.Yf(n,p,l))
+return s&&r!=null?new A.nx(o,o,B.DE,q,o):q}}
 A.Yf.prototype={
 $2(a,b){return new A.pa(this.c,b,B.a7,this.a.a,null)},
 $S:328}
@@ -57195,7 +57197,7 @@ this.f=n
 l=o.a
 s=t.s
 r=t.E
-return new A.u_(!0,new A.CL(new A.rZ(n,q),new A.W(l,70),q),A.abK(A.qd(A.a([A.uz(B.bL,A.a([new A.ca(new A.aS(0,70,0,0),A.f7(q,A.dr(A.S8(p,q),m*0.65,l),q,q,q,q,q,q),q),A.qd(A.a([new A.ca(new A.aS(0,150,0,0),new A.qS(o,q),q),new A.ca(new A.aS(50,20,0,0),A.f7(q,A.ku(A.iC("Welcome to The Raghav group",A.er(q,q,B.C0,q,q,q,q,q,q,q,q,25,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),q,q),q,q,q,q,q,q),q),new A.As(o,q),new A.At(o,A.a([p,"assets/images/1Arya.jpg","assets/images/2Criminal.jpg"],s),A.a(["Sci-fi","Photography","Romance"],s),q),new A.Bx(o,q),new A.rB(q)],r),B.bj,B.a1)],r),B.cu)],r),B.bj,B.a1),B.bd),q)}}
+return new A.u_(!0,new A.CL(new A.rZ(n,q),new A.W(l,70),q),A.abK(A.qd(A.a([A.uz(B.bL,A.a([new A.ca(new A.aS(0,70,0,0),A.f7(q,A.dr(A.S8(p,q),m*0.65,l),q,q,q,q,q,q),q),A.qd(A.a([new A.ca(new A.aS(0,150,0,0),new A.qS(o,q),q),new A.ca(new A.aS(50,20,0,0),A.f7(q,A.ku(A.iC("Welcome to The Raghav group",A.er(q,q,B.C0,q,q,q,q,q,q,q,q,25,q,q,q,q,q,!0,q,q,q,q,q,q,q,q),q,q),q,q),q,q,q,q,q,q),q),new A.As(o,q),new A.At(o,A.a([p,"assets/images/1Arya.jpg","assets/images/2Criminal.jpg"],s),A.a(["Sci-fi","Photography","Romance"],s),q),new A.Bx(o,q),new A.rB(q)],r),B.bj,B.a1)],r),B.cu)],r),B.bj,B.a1),this.d,B.bd),q)}}
 A.a21.prototype={
 $0(){var s=this.a,r=B.b.gbR(s.d.d).as
 r.toString
@@ -57248,7 +57250,7 @@ M(a){var s=null,r=t.S,q=t.cl,p=this.c,o=p.b
 p=p.a
 if(a.Z(t.w).f.a.a<800){p=A.a([A.dr(s,s,p/15)],t.E)
 B.b.I(p,A.aaI(3,r).fe(0,new A.QC(this),q))
-p=new A.ca(new A.aS(0,o/50,0,0),A.abK(A.jJ(p,B.b2,B.a1),B.al),s)
+p=new A.ca(new A.aS(0,o/50,0,0),A.abK(A.jJ(p,B.b2,B.a1),s,B.al),s)
 r=p}else{p/=15
 q=new A.ca(new A.aS(p,o*0.06,p,0),A.jJ(A.ap(A.aaI(3,r).fe(0,new A.QD(this),q),!0,q),B.By,B.a1),s)
 r=q}return r}}
@@ -57304,7 +57306,7 @@ return A.f7(s,A.iC("Knowledge diversity",A.er(s,s,s,s,s,s,s,s,"Montserrat",s,s,4
 A.rZ.prototype={
 ad(){return new A.HW([!1,!1,!1,!1,!1,!1,!1,!1],B.l)}}
 A.HW.prototype={
-M(a){var s,r,q=this,p=null,o=a.Z(t.w).f,n=A.aX(B.d.aI(255*q.a.c),255,255,255)
+M(a){var s,r,q=this,p=null,o=a.Z(t.w).f,n=A.aX(B.d.aI(255*q.a.c),0,0,0)
 o=o.a.a
 s=o/25
 r=t.E
